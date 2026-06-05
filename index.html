@@ -4,7 +4,77 @@
 		<meta charset="utf-8">
 		<title>HW5 - Bowling Alley</title>
 		<style>
-			body { margin: 0; }
+			body { margin: 0; overflow: hidden; }
+
+			#scorecard {
+				position: absolute;
+				top: 10px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0, 0, 0, 0.65);
+				color: #ffffff;
+				font-family: Arial, sans-serif;
+				font-size: 12px;
+				padding: 8px 12px;
+				border-radius: 6px;
+				pointer-events: none;
+				white-space: nowrap;
+			}
+			#scorecard table { border-collapse: collapse; }
+			#scorecard th {
+				border: 1px solid rgba(255, 255, 255, 0.4);
+				padding: 2px 8px;
+				text-align: center;
+				font-size: 11px;
+				background: rgba(255, 255, 255, 0.1);
+			}
+			#scorecard .ball-slot {
+				border: 1px solid rgba(255, 255, 255, 0.3);
+				width: 18px;
+				height: 18px;
+			}
+			#scorecard .frame-score {
+				border: 1px solid rgba(255, 255, 255, 0.4);
+				padding: 3px 4px;
+				text-align: center;
+				height: 22px;
+				font-size: 13px;
+				font-weight: bold;
+			}
+
+			#controls {
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+				background: rgba(0, 0, 0, 0.65);
+				color: #ffffff;
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				padding: 10px 14px;
+				border-radius: 6px;
+				pointer-events: none;
+			}
+			#controls h3 {
+				margin: 0 0 6px 0;
+				font-size: 14px;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+				padding-bottom: 4px;
+			}
+			#controls ul { list-style: none; margin: 0; padding: 0; }
+			#controls li { margin: 3px 0; }
+			#controls .hw06-placeholder {
+				color: rgba(255, 255, 255, 0.4);
+				font-style: italic;
+				font-size: 12px;
+			}
+			#controls kbd {
+				background: rgba(255, 255, 255, 0.15);
+				border: 1px solid rgba(255, 255, 255, 0.35);
+				border-radius: 3px;
+				padding: 1px 5px;
+				font-family: monospace;
+				font-size: 12px;
+			}
 		</style>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script>
 	</head>
