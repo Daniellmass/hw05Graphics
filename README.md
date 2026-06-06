@@ -15,6 +15,23 @@
 - Daniel Mass
 - Yair Tzach
 
-## Technical Details
-- Run the server with: `node index.js`
-- Access at http://localhost:8000 in your web browser
+## How to Run
+1. Clone this repository to your local machine
+2. Make sure you have Node.js installed
+3. Run: `node index.js`
+4. Open http://localhost:8000 in your browser
+
+## Additional Features
+- Triangular lane arrows using `THREE.ShapeGeometry` for a realistic arrowhead appearance
+- Pin shape built with `THREE.LatheGeometry` for an accurate bowling pin silhouette
+- Bowling ball with three finger holes (two adjacent + one offset thumb hole) using oriented cylinders
+- Pin deck area with a distinct darker surface behind the pins
+- UI framework with a 10-frame scorecard and controls panel, ready for HW06
+
+## Known Issues and Limitations
+- No physics, ball rolling, pin collision, or scoring — these are reserved for HW06
+- Finger holes on the bowling ball are visual only (dark cylinders, not actual geometry cutouts)
+
+## External Assets
+- Three.js r128 via CDN: https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js
+- OrbitControls.js — vendored from the Three.js r128 examples
